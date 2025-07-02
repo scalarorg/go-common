@@ -1,5 +1,5 @@
 syntax = "proto3";
-package scalar.go_utils.btc;
+package scalar.go_common.btc;
 
 import "gogoproto/gogo.proto";
 
@@ -10,9 +10,9 @@ enum BTCFeeOpts {
   option (gogoproto.goproto_enum_prefix) = false;
   option (gogoproto.goproto_enum_stringer) = true;
 
-  MINIMUM_FEE = 0 [ (gogoproto.enumvalue_customname) = "MinimumFee" ];
-  ECONOMY_FEE = 1 [ (gogoproto.enumvalue_customname) = "EconomyFee" ];
-  HOUR_FEE = 2 [ (gogoproto.enumvalue_customname) = "HourFee" ];
-  HALF_HOUR_FEE = 3 [ (gogoproto.enumvalue_customname) = "HalfHourFee" ];
-  FASTEST_FEE = 4 [ (gogoproto.enumvalue_customname) = "FastestFee" ];
+  MINIMUM_FEE = 0 [(gogoproto.enumvalue_customname) = "MinimumFee"];
+  ECONOMY_FEE = 1 [(gogoproto.enumvalue_customname) = "EconomyFee"];
+  HOUR_FEE = 2 [(gogoproto.enumvalue_customname) = "HourFee"];
+  HALF_HOUR_FEE = 3 [(gogoproto.enumvalue_customname) = "HalfHourFee"];
+  FASTEST_FEE = 4 [(gogoproto.enumvalue_customname) = "FastestFee"];
 }
